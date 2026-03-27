@@ -86,15 +86,6 @@
       font-weight:800;
       letter-spacing:.2px;
     }
-    .brand img{
-      width:54px;
-      height:54px;
-      object-fit:contain;
-      border-radius:10px;
-      background:#f7f4ef;
-      padding:4px;
-      box-shadow:var(--shadow);
-    }
     .brand-sub{
       font-size:.84rem;
       color:var(--muted);
@@ -254,6 +245,26 @@
       max-width:760px;
     }
 
+    .contact-form{
+      display:grid;
+      gap:12px;
+      margin:22px 0 18px;
+    }
+    .contact-form input,
+    .contact-form textarea{
+      width:100%;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      padding:14px 16px;
+      font:inherit;
+    }
+    .contact-form textarea{
+      min-height:140px;
+      resize:vertical;
+    }
+
     footer{
       padding:28px 0 44px;
       color:var(--muted);
@@ -268,11 +279,6 @@
       flex-wrap:wrap;
     }
 
-    .placeholder{
-      color:#f0b7ab;
-      font-weight:700;
-    }
-
     @media (max-width: 900px){
       .grid-3,
       .grid-2{grid-template-columns:1fr}
@@ -280,10 +286,6 @@
       .hero{padding:82px 0 52px}
       h1{font-size:clamp(2.2rem, 10vw, 3.4rem)}
       .hero p{font-size:1.02rem}
-      .brand img{
-        width:48px;
-        height:48px;
-      }
     }
   </style>
 </head>
@@ -293,7 +295,7 @@
       <div class="brand">
         <div>
           <div>Anchor Point Consulting</div>
-          <div class="brand-sub">Custom data systems for small organizations</div>
+          <div class="brand-sub">Workplace systems and efficiency support for small organizations</div>
         </div>
       </div>
 
@@ -313,10 +315,10 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">Mission</div>
+          <div class="eyebrow">Operational Improvement for Small Teams</div>
           <h1>Anchor Point Consulting</h1>
           <p>
-            As a veteran-owned and operated firm, Anchor Point Consulting partners with small businesses and nonprofit organizations to design practical technical solutions that improve efficiency, reduce costs, and increase organizational insight through custom-built systems.
+            Anchor Point Consulting helps small businesses and nonprofit organizations reduce lost labor, improve workplace efficiency, and fix broken or time-consuming processes. APC focuses on practical systems, workflow improvements, and useful tools that make day-to-day operations easier, clearer, and more sustainable.
           </p>
 
           <div class="hero-actions">
@@ -325,10 +327,10 @@
           </div>
 
           <div class="mini-points">
-            <span>Mission-Driven Focus</span>
-            <span>Built Around Your Existing Workflow</span>
+            <span>Lost Labor Reduction</span>
+            <span>Workflow Improvement</span>
+            <span>Practical Systems</span>
             <span>Privacy-First Design</span>
-            <span>Built for Small Organizations</span>
           </div>
         </div>
       </div>
@@ -338,17 +340,23 @@
       <div class="wrap">
         <div class="section-head">
           <h2>WHY APC</h2>
-          <p>Anchor Point Consulting exists to bridge the gap between complex data systems and the practical needs of small organizations. Many teams are expected to produce insights, reports, and decisions from data that is difficult to access, inconsistent, or overwhelming. APC focuses on building clear, usable systems that turn existing data into something reliable, understandable, and actionable.</p>
+          <p>
+            Many small organizations lose time and money to avoidable friction: manual work, unclear processes, duplicate data entry, weak handoffs, scattered files, and systems that do not match how the team actually works. Anchor Point Consulting exists to identify those problems, simplify them, and build practical solutions that reduce wasted effort and help organizations run more effectively.
+          </p>
         </div>
 
         <div class="grid-2">
           <div class="card">
-            <h3>Built for Real Operations</h3>
-            <p>APC is designed for organizations that don’t have the time, staff, or resources to manage complex technical systems. Every solution is built with real workflows in mind—simple enough to maintain, but strong enough to support meaningful decisions.</p>
+            <h3>Built Around Real Work</h3>
+            <p>
+              APC is not built around selling complexity. The focus is on understanding how work is actually getting done, where time is being lost, and what changes will make the biggest operational difference for your team.
+            </p>
           </div>
           <div class="card">
-            <h3>Clarity Without Complexity</h3>
-            <p>Many organizations are given tools that are powerful but impractical. APC takes a different approach—focusing on clarity, usability, and long-term sustainability so your team can confidently use what’s built without ongoing dependence.</p>
+            <h3>Improvement You Can Maintain</h3>
+            <p>
+              The goal is not to hand you something impressive but fragile. APC builds systems, workflows, and supporting tools that are clear, usable, and realistic for small organizations to maintain over time.
+            </p>
           </div>
         </div>
       </div>
@@ -358,21 +366,29 @@
       <div class="wrap">
         <div class="section-head">
           <h2>SERVICES</h2>
-          <p>APC focuses on practical, high-impact services that help small organizations get more value from the systems and data they already have. Each engagement is designed to reduce friction, improve visibility, and create tools your team can confidently use moving forward.</p>
+          <p>
+            APC helps organizations improve the way work moves through the business. That may mean cleaning up a workflow, reducing manual tasks, improving reporting, organizing operational information, or building a lightweight internal tool. Dashboards and reporting are available when needed, but they are only one part of a broader operational improvement approach.
+          </p>
         </div>
 
         <div class="grid-3">
           <div class="card">
-            <h3>Foundations</h3>
-            <p>Define key metrics, clean up reporting, and build clear Excel-based dashboards that turn raw data into something structured, reliable, and usable for day-to-day decision-making.</p>
+            <h3>Workflow Review & Process Improvement</h3>
+            <p>
+              Identify bottlenecks, rework, repetitive tasks, and breakdowns in communication or handoff. APC reviews how work currently happens and helps redesign the process so it is faster, clearer, and easier to manage.
+            </p>
           </div>
           <div class="card">
-            <h3>Growth & Optimization</h3>
-            <p>Improve workflows, streamline reporting processes, and introduce lightweight automation to reduce manual effort and increase consistency across your operations.</p>
+            <h3>Operational Systems & Automation</h3>
+            <p>
+              Build practical systems that reduce manual effort and improve consistency. This can include tracking tools, internal workflows, structured file systems, automated steps, and lightweight operational support built around the way your organization already works.
+            </p>
           </div>
           <div class="card">
-            <h3>Custom Systems & Support</h3>
-            <p>Design tailored tools, dashboards, and processes built around your organization’s specific needs—ensuring everything is practical, maintainable, and aligned with how your team actually works.</p>
+            <h3>Reporting, Visibility & Decision Support</h3>
+            <p>
+              When organizations need better visibility, APC can build reporting tools, dashboards, or structured summaries that make it easier to understand performance, workload, and trends without adding unnecessary complexity.
+            </p>
           </div>
         </div>
       </div>
@@ -382,17 +398,23 @@
       <div class="wrap">
         <div class="section-head">
           <h2>SECURITY / PRIVACY</h2>
-          <p>APC is built on the principle that organizations should be able to gain insight from their data without giving up control of it. Every solution is designed with privacy, minimal data exposure, and practical security in mind—so your systems remain both useful and responsible.</p>
+          <p>
+            APC is built on the principle that organizations should be able to improve their operations without giving up control of their information. Solutions are designed to minimize unnecessary exposure, reduce dependence on outside platforms where possible, and keep systems practical, understandable, and responsible.
+          </p>
         </div>
 
         <div class="grid-2">
           <div class="card">
-            <h3>Your Data Stays Yours</h3>
-            <p>APC does not take ownership of your data or move it into external platforms unnecessarily. Whenever possible, solutions are designed to work within your existing systems or in environments you control.</p>
+            <h3>Your Information Stays Under Your Control</h3>
+            <p>
+              APC does not treat your operational data, files, or business processes as something that must be pushed into external platforms by default. Whenever possible, work is designed around environments and systems your organization already controls.
+            </p>
           </div>
           <div class="card">
-            <h3>Minimal & Intentional Access</h3>
-            <p>Access to data is limited to what is necessary to complete the work. APC prioritizes minimal exposure, avoids unnecessary data handling, and structures workflows to reduce risk wherever possible.</p>
+            <h3>Minimal and Intentional Access</h3>
+            <p>
+              Access is limited to what is needed to complete the work. APC favors straightforward, low-exposure workflows that reduce unnecessary handling, keep systems understandable, and support a conservative security posture.
+            </p>
           </div>
         </div>
       </div>
@@ -402,57 +424,59 @@
       <div class="wrap">
         <div class="section-head">
           <h2>PROCESS</h2>
-          <p>APC follows a straightforward, structured approach designed to quickly understand your needs, build practical solutions, and deliver systems your team can confidently use without ongoing complexity.</p>
+          <p>
+            APC follows a structured process focused on understanding the real problem first, then building a practical solution that your team can actually use. The goal is to reduce friction, recover time, and leave the organization with something stable and useful.
+          </p>
         </div>
 
         <div class="grid-3">
           <div class="card">
             <h3>Assess</h3>
-            <p>Review your current reporting, workflows, and pain points to identify where time is being lost and where clearer insight can be created.</p>
+            <p>
+              Review current workflows, recurring pain points, manual tasks, and operational weak spots to understand where time and effort are being lost.
+            </p>
           </div>
           <div class="card">
-            <h3>Build</h3>
-            <p>Design and implement dashboards, tools, or process improvements tailored to your organization’s actual workflows and priorities.</p>
+            <h3>Improve</h3>
+            <p>
+              Design and implement practical changes such as process redesign, automation, internal tools, reporting improvements, or more structured systems for getting work done.
+            </p>
           </div>
           <div class="card">
-            <h3>Deliver & Support<h3>
-            <p>Provide clear documentation, usable systems, and optional ongoing support so your team can maintain and build on what’s been created.</p>
+            <h3>Stabilize</h3>
+            <p>
+              Deliver clear systems, documentation, and support so the improvement lasts beyond the initial project and fits naturally into the organization’s ongoing work.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-  <div class="wrap">
-    <div class="cta">
-      <h2>Let’s build a clearer, more efficient way to work with your data.</h2>
+      <div class="wrap">
+        <div class="cta">
+          <h2>Let’s reduce friction and build a better way for your team to work.</h2>
 
-      <p>
-        APC works with small businesses and nonprofit organizations to improve reporting, streamline workflows, and create practical systems that support better decision-making. If your team is looking for a more efficient and reliable way to work with your data, let’s start a conversation.
-      </p>
+          <p>
+            APC works with small businesses and nonprofit organizations that need to improve efficiency, reduce lost labor, and fix operational problems that slow work down. If your team is dealing with repetitive tasks, messy workflows, weak visibility, or systems that no longer fit the job, let’s start a conversation.
+          </p>
 
-      <form action="https://formspree.io/f/xqeygwbq" method="POST" class="contact-form">
-        
-        <input type="text" name="name" placeholder="Your Name" required>
+          <form action="https://formspree.io/f/xqeygwbq" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="What operational problem are you trying to solve?" required></textarea>
+            <button class="btn btn-primary" type="submit">
+              Get in Touch
+            </button>
+          </form>
 
-        <input type="email" name="email" placeholder="Your Email" required>
-
-        <textarea name="message" placeholder="How can APC help?" required></textarea>
-
-        <button class="btn btn-primary" type="submit">
-          Get in Touch
-        </button>
-
-      </form>
-
-      <a class="btn btn-secondary" href="mailto:stephen@apcquality.com">
-        Email Directly
-      </a>
-
-    </div>
-  </div>
-</section>
-</main>
+          <a class="btn btn-secondary" href="mailto:stephen@apcquality.com">
+            Email Directly
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="wrap footer-line">
